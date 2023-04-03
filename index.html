@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="css/academicons.min.css"/>
 
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
@@ -29,11 +30,11 @@
 </head>
   <body>
 
-	<div id="colorlib-page">
+	<div id="home">
 			
 		  	<div class="container">
 				<div class="d-flex justify-content-center"> <!-- align-items-center"> -->
-					<div class="col-md-8 text text-left">
+					<div class="col-md-10 text text-left">
 						<div class="desc">
 							<br>
 														
@@ -41,17 +42,20 @@
 								.clearfix:before,
 								.clearfix:after{content: ' ';display: table;}
 								.clearfix:after{clear:both;}
-								.side{float: left;width: 40%;}
-								.main{margin-left: 45%;}
+								.side{float: left; width: 30%;}
+								.main{margin-left: 35%;}
+								.main-2{float:left;width: 58%;}
+								.side-2{margin-left: 60%;}
 							</style>
 							<div class="clearfix">	
 								<div class = "side">
 									<img src="images/dl.jpg" width=90%>	
 								</div>
 								<div class = "main">
-									<h3 id="colorlib-active"><a style="color:black;" href="index.html">Dong Li</a></h3>
+									<h3><a style="color:black;" href="index.html">Dong Li</a></h3>
 									<p> Ph.D. student at Virginia Tech </p>
 										<li><a style="color:#5DADE2;" href="mailto:dongli@vt.edu"><i class="icon-envelope"></i>  dongli@vt.edu</span></a></li>
+										<li><a style="color:#5DADE2;" href="https://scholar.google.com/citations?user=v6KV1jkAAAAJ"><i class="ai ai-google-scholar-square"></i> Google Scholar</a></li>
 								</div>
 							</div>
 							
@@ -62,7 +66,38 @@
 							<br>
 							<h3 id="about-me">About me</h3>
 							<p>I’m a Ph.D. student in <a style="color:#5DADE2;" href="https://ece.vt.edu/" target="_blank">Bradley Department of Electrical and Computer Engineering</a> at <a style="color:#5DADE2;" href="https://vt.edu/" target="_blank">Virginia Tech</a>. I’m honored to be advised by <a style="color:#5DADE2;" href="https://ece.vt.edu/people/profile/zeng" target="_blank">Prof. Haibo Zeng</a>. My current research interest lies in Safety-Critical Cyber-Physical Systems. Especially in Intelligent Transportation, Connected and Automated Vehicles and Real-Time Scheduling. I recieved B.E. and M.E. degrees in <a style="color:#5DADE2;" href="http://www.cse.zju.edu.cn/english/" target="_blank">Control Science and Engineering</a> from <a style="color:#5DADE2;" href="http://www.zju.edu.cn/english/" target="_blank">Zhejiang University</a>, Hangzhou, China, in 2017 and 2020, respectively.</p>								
-							
+							<br>
+
+							<h3 id="projects">Projects</h3>
+							<div class="clearfix">	
+								<div class = "main-2">
+									<h6 style="color:black">Intelligent unsignalized intersection management</h6>
+									<ul>
+										<li>Model the intersection with a generalized conflict directed graph</li>
+										<li>Customized traveling windows are assigned to CAVs based on a breadth-first searching algorithm for safe and efficient operation</li>
+										<li>Propose a dynamic outbound-lane assignment strategy that can significantly improve the intersection evacuation timepicker</li>
+									</ul>
+								</div>
+								<div class = "side-2">
+									<img src="images/intersection.gif" width=60%>	
+								</div>
+							</div>
+							<br>
+							<div class="clearfix">	
+								<div class = "main-2">
+								<h6 style="color:black">Provably safe small-gap platooning of high-speed CAVs</h6>
+								<ul>
+									<li>Achieve safe and small-gap (less than 10 meters) platooning with bounded communication delay by enforcing a constrained deceleration protocol</li>
+									<li>Two braking strategies are proposed and proven to be safe using verification tools <a style="color:#5DADE2;" href="https://symbolaris.com/info/KeYmaera.html">KeYmaera</a></li>
+									<li>SUMO simulation is conducted to verify the safety and correctness</li>
+								</ul>
+								</div>
+								<div class = "side-2">
+									<img src="images/platooning.gif" width=100%>	
+								</div>
+							</div>
+
+
 							<h3 id="education">Education</h3>
 							<ul>
 								<li><p><strong>Virginia Polytechnic Institute and State University</strong>, Blacksburg, VA, USA <br> Ph.D. student, Computer Engineering, 2021 - Present</p></li>
